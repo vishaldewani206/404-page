@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  max-height: 1080px;
+  max-width: 1440px;
+}
+
+nav h3 {
+  font-family: 'Inconsolata', monospace;
+  padding: 40px 77px;
+  color: #333333;
+  text-transform: uppercase;
+}
+header {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+aside {
+  width: 50%;
+  display: grid;
+  place-items: center;
+}
+aside img {
+  width: 80%;
+}
+main {
+  width: 50%;
+  padding: 2rem;
+}
+main h1 {
+  font-family: 'Inconsolata', monospace;
+  font-size: 4rem;
+  color: #333333;
+}
+main p {
+  font-family: 'Space Mono', monospace;
+  margin: 3rem 0;
+  width: 55%;
+  font-size: 1.2rem;
+  color: #4f4f4f;
+}
+.back {
+  width: 200px;
+  height: 60px;
+  font-size: 1rem;
+  background: #333333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.back:hover {
+  opacity: 0.7;
+}
+.programmer {
+  position: absolute;
+  bottom: 0;
+  font-family: 'Space Mono', monospace;
+}
+.programmer a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 786px) {
+  header {
+    flex-direction: column;
+  }
+  aside,
+  main,
+  main p {
+    width: 100%;
+  }
+  main h1 {
+    font-size: 3rem;
+  }
+  .back {
+    width: 150px;
+    font-size: 0.9rem;
+  }
+  nav h3 {
+    padding: 20px 35px;
+  }
+}
